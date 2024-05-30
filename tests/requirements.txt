@@ -10,3 +10,4 @@ pytest-cov>=2.5.1
 paver; python_version>="3.6"
 futures; python_version=="2.7"
 pip==18.1  # Temporary workaround for #1644.
+security==1.2.1
