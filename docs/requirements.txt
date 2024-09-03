@@ -3,3 +3,4 @@ rst.linker>=1.9
 jaraco.packaging>=6.1
 
 setuptools>=34
+security==1.3.1
