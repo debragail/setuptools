@@ -17,7 +17,8 @@ if PY3:
 
 # modeled after CPython's test.support.can_symlink
 def can_symlink():
-    TESTFN = tempfile.mktemp()
+    with tempfile.NamedTemporaryFile(delete=False) as tf:
+        TESTFN = tf.name
     symlink_path = TESTFN + "can_symlink"
     try:
         os.symlink(TESTFN, symlink_path)
